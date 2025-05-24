@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #68095d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #222;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+.search input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+}
+
+.hero {
+  background: #444;
+  color: white;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.hero button {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  border: none;
+  background: #ff7b00;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.destacados {
+  padding: 2em;
+}
+
+.destacados h2 {
+  margin-bottom: 1em;
+}
+
+.itemCarrusel{
+  border: 1px solid black;
+  height: 200px;
+  position: relative;
+}
+
+.tarjetaCarrusel{
+  background-color: rgb(52, 180, 180);
+  height: 100%;
+}
+.flechasCarrusel{
+  background-color: rgba(21, 50, 210,0.3);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.juegos-grid {
+  display: flex;
+  gap : 10px;
+  flex-direction: row ;
+}
+
+.juego-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.juego-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.explorador {
+  display: flex;
+  padding: 2em;
+}
+
+.filtros {
+  width: 250px;
+  margin-right: 2em;
+}
+
+.filtros h3 {
+  margin-bottom: 1em;
+}
+
+.filtros label {
+  display: block;
+  margin-top: 1em;
+}
+
+.resultados {
+  flex-grow: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #222;
+  color: white;
+  margin-top: 3em;
+}
