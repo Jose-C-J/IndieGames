@@ -1,0 +1,80 @@
+/* =======================
+   RESET & VARIABLES
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #35014f;
+  --accent: #68095d;
+  --card: #b4016a;
+  --text: #ffe45b;
+  --radius: 0.625rem;
+  --gap: 2rem;
+}
+/* =======================
+   BASE
+======================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* =======================
+   LAYOUT
+======================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+}
+nav {
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+main.comunidad {
+  flex: 1;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+/* =======================
+   COMPONENTES
+======================= */
+/* Secciones principales */
+section {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+/* Listas de valores */
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+li {
+  margin-top: 0.5rem;
+}
+/* =======================
+   FOOTER
+======================= */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}

@@ -1,0 +1,131 @@
+/* =======================
+   RESET & VARIABLES
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bg: #35014f;
+  --accent: #68095d;
+  --card: #b4016a;
+  --text: #ffe45b;
+  --button: #ff7b00;
+  --radius: 0.625rem;
+  --gap: 2rem;
+}
+/* =======================
+   BASE
+======================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* =======================
+   LAYOUT
+======================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+}
+nav {
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+main.detalle {
+  flex: 1;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+/* =======================
+   COMPONENTES
+======================= */
+/* Información principal del juego */
+.info-principal {
+  display: flex;
+  gap: var(--gap);
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+/* Imagen del juego */
+.info-principal img {
+  width: 15.625rem; /* 250px */
+  border-radius: var(--radius);
+}
+/* Información textual */
+.info-principal div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+/* Lista de datos del juego */
+.info-principal ul {
+  list-style: none;
+}
+/* Sección extra (rating + comentarios) */
+.extra {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+/* Campo de comentarios */
+textarea {
+  width: 100%;
+  height: 5rem;
+  margin-top: 1rem;
+  border-radius: var(--radius);
+  border: none;
+  padding: 0.5rem;
+}
+/* Botón */
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--button);
+  border: none;
+  color: white;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+/* =======================
+   FOOTER
+======================= */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+/* =======================
+   MEDIA QUERIES
+======================= */
+@media (max-width: 768px) {
+  .info-principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .info-principal img {
+    width: 100%;
+    max-width: 18rem;
+  }
+}

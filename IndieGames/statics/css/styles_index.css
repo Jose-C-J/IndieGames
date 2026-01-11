@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #35014f;
+  color: #ffe45b;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #68095d;
+  color: white;
+  flex-wrap: wrap;
+}
+.logo {
+  font-size: 1.5em;
+}
+nav {
+  display: flex;
+  gap: 1em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.search input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+}
+.hero {
+  background: #444;
+  color: white;
+  text-align: center;
+  padding: 3em 1em;
+}
+.hero button {
+  margin-top: 1em;
+  padding: 0.75em 1.5em;
+  border: none;
+  background: #ff7b00;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero button:hover {
+  background: #e06b00;
+}
+.destacados {
+  padding: 2em;
+}
+.destacados h2 {
+  margin-bottom: 1em;
+}
+.carrusel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2em;
+}
+.carrusel-ventana {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex: 1;
+}
+.carrusel-items {
+  display: flex;
+  gap: 1em;
+}
+.carrusel-item {
+  flex: 0 0 300px;
+  background: rgb(128, 4, 103);
+  border-radius: 10px;
+  padding: 1em;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 8px rgba(255, 163, 3, 0.662);
+  text-align: center;
+}
+.carrusel-item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+.carrusel-btn {
+  background: #ff7b00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  font-size: 1.5em;
+  cursor: default;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carrusel-btn:hover {
+  background: #e06b00;
+}
+.juegos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.juego-card {
+  background: rgb(180, 1, 106);
+  border-radius: 10px;
+  padding: 1em;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+.juego-card:hover {
+  transform: scale(1.02);
+}
+.juego-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5em;
+}
+.explorador {
+  display: flex;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+.filtros {
+  width: 250px;
+  margin-right: 2em;
+}
+.filtros label {
+  display: block;
+  margin-top: 1em;
+}
+.resultados {
+  flex: 1;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #222;
+  color: white;
+  margin-top: 3em;
+}
+@media (max-width: 768px) {
+  .juegos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .explorador {
+    flex-direction: column;
+  }
+  .filtros {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+.registro {
+  background-color: #a600a0;
+  padding: 2em;
+  margin: 2em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.registro h2 {
+  margin-bottom: 1em;
+  color: #68095d;
+}
+.formulario-registro {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.formulario-registro label {
+  font-weight: bold;
+}
+.formulario-registro input,
+.formulario-registro select {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.formulario-registro button {
+  background-color: #ff7b00;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 0.75em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.formulario-registro button:hover {
+  background-color: #e06b00;
+}

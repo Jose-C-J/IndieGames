@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indie Games Explorer</title>
+  <link rel="stylesheet" href="../statics/css/styles_index.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🎮 IndieGames</div>
+    <nav>
+      <a href="Index.html">Inicio</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Buscar juegos..." />
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Descubre y Explora los Mejores Juegos Indie</h1>
+      <button>Explorar Juegos</button>
+    </section>
+
+    <section id="Destacados" class="destacados">
+      <h2>Juegos Destacados</h2>
+      
+      <div class="carrusel">
+  <button class="carrusel-btn izquierda">&#10094;</button>
+  <div class="carrusel-ventana">
+    <div class="carrusel-items">
+      <div class="carrusel-item">
+        <a href="Informacion0_juego.html">
+          <img src="../statics/img/Hollow_Knight_first_cover_art.webp" alt="Hollow Knight">
+          <p>Hollow Knight</p>
+        </a>
+      </div>
+      <div class="carrusel-item">
+        <img src="../statics/img/Celeste.png" alt="Celeste" width="200" height="350"/>
+        <p>Celeste</p>
+      </div>
+      <div class="carrusel-item">
+        <img src="../statics/img/Stardew_Valley.jpg" alt="Stardew Valley" width="200" height="350"/>
+        <p>Stardew Valley</p>
+      </div>
+    </div>
+  </div>
+  <button class="carrusel-btn derecha">&#10095;</button>
+</div>
+      <div class="juegos-grid">
+        <div class="juego-card">
+          <img src="../statics/img/Hollow_Knight_first_cover_art.webp" alt="Hollow_Knight" width="200" height="350"/>
+          <h3>Hollow Knight</h3>
+          <p>Juego de aventura en un mundo de insectos.</p>
+          <button>Ver más</button>
+        </div>
+        <div class="juego-card">
+          <img src="../statics/img/Celeste.png" alt="Celeste" width="200" height="350"/>
+          <h3>Celeste</h3>
+          <p>Plataformas con una historia conmovedora.</p>
+          <button>Ver más</button>
+        </div>
+        <div class="juego-card">
+          <img src="../statics/img/Stardew_Valley.jpg" alt="Stardew Valley" width="200" height="350"/>
+          <h3>Stardew Valley</h3>
+          <p>Simulador de vida y granja con estilo retro.</p>
+          <button>Ver más</button>
+        </div>
+      </div>
+    </section>
+    <section class="explorador">
+      <aside class="filtros">
+        <h3>Filtros</h3>
+        <label>Género</label>
+        <select>
+          <option>Todos</option>
+          <option>Plataformas</option>
+          <option>Aventura</option>
+        </select>
+        <label>Plataforma</label>
+        <select>
+          <option>Todos</option>
+          <option>PC</option>
+          <option>Celular</option>
+          <option>Switch</option>
+          <option>PlayStation</option>
+          <option>Xbox</option>
+        </select>
+      </aside>
+      <div class="resultados">
+        <h3>Resultados</h3>
+        <div class="juego-card">Aquí aparecerán los juegos filtrados.</div>
+      </div>
+    </section>
+    <section class="registro">
+    <h2>Crear una cuenta</h2>
+    <form class="formulario-registro">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="NAME" required>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="EMAIL" required>
+      <label for="usuario">Nombre de usuario:</label>
+      <input type="text" id="usuario" name="usuario" placeholder="NICKNAME" required>
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" id="contrasena" name="contrasena" placeholder="PASSWORD" required>
+      <label for="genero">Género de juegos favorito:</label>
+      <select id="genero" name="genero">
+        <option value="">Selecciona uno</option>
+        <option value="aventura">Aventura</option>
+        <option value="plataformas">Plataformas</option>
+        <option value="estrategia">Estrategia</option>
+        <option value="simulacion">Simulación</option>
+        <option value="terror">Terror</option>
+      </select>
+      <button type="submit">Registrarse</button>
+    </form>
+  </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 IndieGames Explorer | Contacto | Redes Sociales</p>
+  </footer>
+</body>
+</html>

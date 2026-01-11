@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos | Indie Games Explorer</title>
+  <link rel="stylesheet" href="../statics/css/styles_Juegos.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">🎮 IndieGames</div>
+    <nav>
+      <a href="Index.html">Inicio</a>
+      <a href="juegos.html">Juegos</a>
+      <a href="noticias.html">Noticias</a>
+      <a href="comunidad.html">Comunidad</a>
+    </nav>
+    <div class="search">
+      <input
+        type="text"
+        id="searchBar"
+        placeholder="Buscar juegos..."
+        aria-label="Buscar juegos"
+      />
+    </div>
+  </header>
+  <main class="main">
+    <section class="filtros">
+      <div>
+        <label for="genreFilter">Género</label>
+        <select id="genreFilter">
+          <option value="all">Todos</option>
+          <option value="aventura">Aventura</option>
+          <option value="plataformas">Plataformas</option>
+          <option value="simulacion">Simulación</option>
+        </select>
+      </div>
+      <div>
+        <label for="platformFilter">Plataforma</label>
+        <select id="platformFilter">
+          <option value="all">Todas</option>
+          <option value="pc">PC</option>
+          <option value="switch">Switch</option>
+          <option value="playstation">PlayStation</option>
+          <option value="xbox">Xbox</option>
+        </select>
+      </div>
+    </section>
+    <section class="juegos-grid" id="juegosGrid" aria-label="Catálogo de juegos">
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 IndieGames Explorer</p>
+  </footer>
+  <script src=".vscode/js/code_Juegos.js"></script>
+</body>
+</html>
